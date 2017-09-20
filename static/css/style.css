@@ -1,0 +1,170 @@
+/*
+Copyright 2017 Nirmal Kumar
+
+This file is part of LibreRead.
+
+LibreRead is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+LibreRead is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with LibreRead.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	color: #161616;
+	background: #FFFFF8;
+}
+
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+::selection {
+  background: #FF4848;
+  color: white;
+}
+
+::-moz-selection {
+  background: #FF4848;
+  color: white;
+}
+
+.banner {
+	width: 1040px;
+	margin: 40px auto 50px;
+}
+
+.banner .logo {
+	display: block;
+	font-family: 'Droid Sans', sans-serif;
+	width: 133px;
+	height: 31px;
+	font-weight: 700;
+	font-size: 20px;
+	color: #ff4848;
+	text-decoration: none;
+	margin: 0 auto 50px;
+	cursor: pointer;
+}
+
+.banner .logo svg {
+	float: left;
+}
+
+.banner .logo div {
+	float: left;
+	margin-top: 7px;
+	padding-left: 5px;
+}
+
+.banner .tagline {
+	font-size: 20px;
+	font-weight: 600;
+	clear: both;
+	text-align: center;
+}
+
+.banner .description {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.banner .buttons {
+    width: 292px;
+    height: 38px;
+    margin: 30px auto 0;
+}
+
+.banner .buttons .demo-button, .banner .buttons .install-button {
+	float: left;
+	width: 126px;
+    height: 38px;
+	color: #161616;
+	font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    border: 3px solid #525252;
+    padding-top: 5px;
+    margin-right: 40px;
+}
+
+.banner .buttons .install-button {
+	color: white;
+	background: #ff4848;
+	border: none;
+	padding-top: 8px;
+	margin-right: 0;
+}
+
+.detail {
+	width: 1040px;
+	margin: 50px auto;
+	overflow: hidden;
+}
+
+.detail .screenshot {
+	float: left;
+	border: 3px solid #e4e4e4;
+}
+
+.detail .d-wrapper {
+	float: right;
+	width: 500px;
+}
+
+.features {
+	float: left;
+	margin-right: 50px;
+	margin-bottom: 18px;
+}
+
+.features .title, .license .title, .donate .title {
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+li {
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+.license {
+	float: right;
+	width: 296px;
+}
+
+.license .description, .donate .description {
+	line-height: 24px;
+}
+
+.donate {
+	display: block;
+	clear: both;
+}
+
+footer {
+	width: 108px;
+	margin: 50px auto;
+	overflow: hidden;
+}
+
+footer a {
+	float: left;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+footer a:last-child {
+	margin-right: 0;
+}

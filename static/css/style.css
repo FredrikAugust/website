@@ -153,6 +153,16 @@ li {
 	clear: both;
 }
 
+.donate a {
+	color: #ff4848;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.donate a:hover {
+	text-decoration: underline;
+}
+
 footer {
 	width: 108px;
 	margin: 50px auto;

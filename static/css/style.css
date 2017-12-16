@@ -24,6 +24,12 @@ body {
 	background: #FFFFF8;
 }
 
+.wrapper {
+	width: 95%;
+	max-width: 1040px;
+	margin: 0 auto;
+}
+
 *, *::after, *::before {
 	margin: 0;
 	padding: 0;
@@ -41,7 +47,7 @@ body {
 }
 
 .banner {
-	width: 1040px;
+	/*width: 1040px;*/
 	margin: 40px auto 50px;
 }
 
@@ -89,14 +95,18 @@ body {
 .banner .buttons .demo-button, .banner .buttons .install-button {
 	float: left;
 	width: 126px;
-    height: 38px;
+  height: 38px;
 	color: #161616;
 	font-weight: 600;
-    text-decoration: none;
-    text-align: center;
-    border: 3px solid #525252;
-    padding-top: 5px;
-    margin-right: 40px;
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid #525252;
+  padding-top: 5px;
+  margin-right: 40px;
+}
+
+.banner .buttons .demo-button:hover {
+	background-color: rgb(241, 237, 237);
 }
 
 .banner .buttons .install-button {
@@ -107,8 +117,12 @@ body {
 	margin-right: 0;
 }
 
+.banner .buttons .install-button:hover {
+	background-color: #c83737;
+}
+
 .detail {
-	width: 1040px;
+	/*width: 1040px;*/
 	margin: 50px auto;
 	overflow: hidden;
 }
@@ -139,6 +153,10 @@ li {
 	list-style: none;
 }
 
+li:last-child {
+	margin-bottom: 0;
+}
+
 .license {
 	float: right;
 	width: 296px;
@@ -164,28 +182,34 @@ li {
 }
 
 .subscription {
-	width: 1040px;
+	/*width: 1040px;*/
 	margin: 0 auto;
 }
 
 .subscription .title {
 	font-weight: 600;
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 #mc_embed_signup {
-	width: 400px;
+	/*width: 400px;*/
+	width: 100%;
+	max-width: 400px;
 	margin: 0 auto;
+}
+
+#mc-embedded-signup-form, #mc_embed_signup form {
+	padding: 0 !important;
 }
 
 #mc_embed_signup input[type="email"], #mc_embed_signup input[type="text"] {
 	display: block;
 	font-family: 'Source Sans Pro', sans-serif!important;
 	border: 1px solid #b1b1b1;
-    border-radius: 0;
-    font-size: 16px;
-    outline: none;
+  border-radius: 0;
+  font-size: 16px;
+  outline: none;
 }
 
 #mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {
@@ -201,13 +225,19 @@ li {
 	border-radius: 0;
 	font-family: 'Source Sans Pro', sans-serif!important;
 	font-weight: 600;
-    background: #ff4848;
-    outline: none;
-    margin: 0 auto;
+  background: #ff4848;
+  outline: none;
+  margin: 0 auto;
+	width: 100%;
+	height: 38px;
 }
 
 #mc_embed_signup input[type="submit"]:hover {
-	background: #ff4848;
+	background: #c83737;
+}
+
+.mc-field-group {
+	width: 100% !important;
 }
 
 footer {
@@ -224,4 +254,83 @@ footer a {
 
 footer a:last-child {
 	margin-right: 0;
+}
+
+/* Mobile View */
+@media (max-width: 750px) {
+	.banner {
+		width: 100%;
+		/*margin: 0;*/
+	}
+
+	.banner .buttons {
+		width: 100%;
+	}
+
+	.banner .demo-button, .banner .install-button {
+		width: 100% !important;
+		margin-bottom: 15px;
+	}
+
+	.banner .buttons .demo-button:hover {
+		background-color: #FFFFF8;
+	}
+
+	.banner .buttons .install-button:hover {
+		background-color: #ff4848;
+	}
+
+	.detail {
+		width: 100%;
+	}
+
+	.detail .screenshot {
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	.detail .d-wrapper {
+		float: none;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.detail .d-wrapper .features, .detail .d-wrapper .license, .detail .d-wrapper .donate {
+		float: none;
+		width: 100%;
+		margin: 20px 0;
+	}
+
+	.subscription {
+		width: 100%;
+	}
+
+	#mc_embed_signup {
+		width: 100%;
+		max-width: none;
+	}
+
+	#mc_embed_signup input[type="submit"]:hover {
+		background: #ff4848;
+	}
+}
+
+@media (max-width: 1061px) and (min-width: 750px) {
+	.detail .screenshot {
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	.detail .d-wrapper {
+		display: grid;
+		float: left;
+		width: 100%;
+		grid-template-columns: repeat(3, 1fr);
+		margin-top: 20px;
+	}
+
+	.detail .d-wrapper .features, .detail .d-wrapper .license, .detail .d-wrapper .donate {
+		padding: 0;
+		margin: 0;
+	}
 }
